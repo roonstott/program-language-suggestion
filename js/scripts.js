@@ -23,40 +23,40 @@ function submitForms() {
   const q6Form = document.getElementById("q6");
   const q7Form = document.getElementById("q7");
 
-  q1Form.requestSubmit();
   q1Form.addEventListener("submit" , function(event) {
     event.preventDefault();
   });
+  q1Form.requestSubmit();
 
-  q2Form.requestSubmit();
   q2Form.addEventListener("submit" , function(event) {
     event.preventDefault();
   });
+  q2Form.requestSubmit();
 
-  q3Form.requestSubmit();
   q3Form.addEventListener("submit" , function(event) {
     event.preventDefault();
   });
+  q3Form.requestSubmit();
 
-  q4Form.requestSubmit();
   q4Form.addEventListener("submit" , function(event) {
     event.preventDefault();
   });
+  q4Form.requestSubmit();
 
-  q5Form.requestSubmit();
   q5Form.addEventListener("submit" , function(event) {
     event.preventDefault();
   });
+  q5Form.requestSubmit();
 
-  q6Form.requestSubmit();
   q6Form.addEventListener("submit" , function(event) {
     event.preventDefault();
   });
+  q6Form.requestSubmit();
 
-  q7Form.requestSubmit();
   q7Form.addEventListener("submit" , function(event) {
     event.preventDefault();
   });
+  q7Form.requestSubmit();
 }
 
 //display functions
