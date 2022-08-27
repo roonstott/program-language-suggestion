@@ -14,17 +14,17 @@ function displayJsSuggestion(event) {
 }
 
 function displayBackEndSuggestion() {
-  const asparagusAnswer = document.querySelector("asparagus#input[name='asparagus']:checked").value;
+  const asparagusAnswer = document.querySelector("input[name='asparagus']:checked").value;
   document.getElementById("back-end-response").innerText = asparagusAnswer;
 }
 
 
 function submitForms() {
-  const asparagusForm = document.querySelector("form#asparagus");
-  asparagusForm.submit();
+  const asparagusForm = document.getElementById("asparagus");
   asparagusForm.addEventListener("submit" , function(event) {
     event.preventDefault();
   });
+  asparagusForm.requestSubmit();
   }
 
 window.addEventListener("load", function() {
