@@ -1,11 +1,12 @@
 
-//function called on "load"
+//function called by eventListener on "load"
 
 window.addEventListener("load", function() {
   const jsForm = document.getElementById("js-select-form");
   jsForm.addEventListener("submit", displayJsSuggestion);
    
-  document.getElementById("show-me").addEventListener("click", function() {
+  const backEndButton = document.getElementById("show-me");
+  backEndButton.addEventListener("click", function() {
     submitForms();
     displayBackEndSuggestion();
   });
