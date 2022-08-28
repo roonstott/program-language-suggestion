@@ -3,13 +3,19 @@
 
 window.addEventListener("load", function() {
   
-  document.getElementById("")
-
   const jsForm = document.getElementById("js-select-form");
   jsForm.addEventListener("submit", displayJsSuggestion);
    
+  document.getElementById("surveyIntro").removeAttribute("class");
+
+  document.getElementById("takeTheSurvey").addEventListener("click", function () {
+    document.getElementById("surveyIntro").setAttribute("class", "hidden")
+    document.getElementById("surveyBody").removeAttribute("class");
+  });
+
   const showMeButton = document.getElementById("show-me");
-  showMeButton.addEventListener("click", function() {
+  showMeButton.addEventListener("click" , function() {
+    document.getElementById("surveyBody").setAttribute("class" , "hidden");
     submitForms();
     displayBackEndSuggestion();
   });
@@ -93,8 +99,17 @@ function displayBackEndSuggestion() {
   const q6Answer = parseInt(document.querySelector("input[name='q6']:checked").value);
   const q7Answer = parseInt(document.querySelector("input[name='q7']:checked").value);
   
-  let tally = (q1Answer + q2Answer + q3Answer + q4Answer + q5Answer + q6Answer + q7Answer);
+  let tally1 = (q1Answer + q4Answer);
+  let tally2 = (q3Answer + q7Answer);
+  let tally3 = (q5Answer + q6Answer);
   
+
+  let surveyReply;
+  if (tally1 >= tally2 && tally1 >= tally3) {
+    surveyReply = "Ruby"
+  }
+
+
   document.getElementById("back-end-response").innerText = (tally.toString());
 }
 

@@ -11,12 +11,6 @@
   margin: 2%;
 }
 
-.disagree {
-}
-
-.agree {
-}
-
 .oneToSevenForm {
   padding-top: 2%;
   padding-left: 3%;
@@ -24,10 +18,6 @@
   
 }
 
-.surveyHide {
-display: none;
-}
-
-.surveyReveal {
-  display:
+.hidden {
+  display: none;
 }

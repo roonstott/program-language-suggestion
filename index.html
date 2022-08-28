@@ -21,13 +21,12 @@
 
   <h2>How about C#, Python, or Ruby?</h1>
 
-  <div class="startSurveyButton">
-    <button type="button" class="hidden" id="takeTheSurvey">Click Here To Take The Survey</button>
+  <div id="surveyIntro" class="hidden">
+    <p>These are two of the most popular languages for back end development. In addition to Javascript and React for frontend, you'll want to consider between C# and Ruby to develop your skills in the realm of back end development.</p>
+    <button type="button" id="takeTheSurvey">Click Here To Take The Survey</button>
   </div>
 
-  <div class="surveyHide">
-    <p>These are two of the most popular languages for back end development. In addition to Javascript and React for frontend, you'll want to consider between C# and Ruby to develop your skills in the realm of back end development.</p>
-
+  <div id="surveyBody" class="hidden">
     <h3>Choose a number between 1 and 7</h3>
     <p>With <strong>1</strong> meaning that you strongly disagree, <strong>7</strong> meaning that you strongly DO agree, and <strong>4</strong> being a state of general ambivalence.</p>
     
@@ -346,12 +345,10 @@
       </div>
     </div>
       <br>
-    <div class="showMeButton">
-      <button type="button" class="hidden" id="show-me">Show My Results</button>
-    </div>
+      <button type="button" id="show-me">Show My Results</button>
   </div>
 
-  <div class="surveyReveal">
+  <div id="surveyResults" class="hidden">
     <p id="back-end-response"></p>
   </div>
 
