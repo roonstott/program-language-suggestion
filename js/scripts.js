@@ -17,7 +17,11 @@ window.addEventListener("load", function() {
   showMeButton.addEventListener("click" , function() {
     document.getElementById("surveyBody").setAttribute("class" , "hidden");
     submitForms();
-    displayBackEndSuggestion();
+    bottomSuggestion();
+  });
+
+  document.getElementById("reset").addEventListener("click", function () {
+    window.location.reload();
   });
 
 });
@@ -88,9 +92,9 @@ function displayJsSuggestion(event) {
   document.getElementById("js-response").innerText= jsMessage
 }
 
-  //bottom section: back-end
+  //bottom section: Python, Ruby, or C#
 
-function displayBackEndSuggestion() {
+function bottomSuggestion() {
   const q1Answer = parseInt(document.querySelector("input[name='q1']:checked").value);
   const q2Answer = parseInt(document.querySelector("input[name='q2']:checked").value);
   const q3Answer = parseInt(document.querySelector("input[name='q3']:checked").value);
@@ -105,12 +109,25 @@ function displayBackEndSuggestion() {
   
 
   let surveyReply;
-  if (tally1 >= tally2 && tally1 >= tally3) {
+  if (tally1 > tally2 && tally1 > tally3) {
     surveyReply = "Ruby"
   }
 
+  else if (tally2 >= tally1 && tally2 >= tally3) {
+    surveyReply = "C#"
+  }
 
-  document.getElementById("back-end-response").innerText = (tally.toString());
+  else if (tally3 >= tally1 && tally3 >= tally2) {
+    surveyReply = "Python"
+  }
+
+  else {
+    surveyReply = "Ruby"
+  }
+  
+  document.getElementById("showResults").innerText = surveyReply;
+
+  document.getElementById("surveyResults").removeAttribute("class");
 }
 
 
