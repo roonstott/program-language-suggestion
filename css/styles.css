@@ -2,12 +2,13 @@
   border-style: solid;
   border-width: 3px;
   border-color:darkgoldenrod;
+  margin: 2%;
 }
 .qBox {
   display: flex;
   background-color: antiquewhite;
   justify-content: center;
-  margin: 5%;
+  margin: 2%;
 }
 
 .disagree {
@@ -21,4 +22,12 @@
   padding-left: 3%;
   padding-right: 4%;
   
+}
+
+.surveyHide {
+display: none;
+}
+
+.surveyReveal {
+  display:
 }
