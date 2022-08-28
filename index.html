@@ -6,352 +6,357 @@
   <script src="js/scripts.js"></script>
 </head>
 <body>
-  <h1>Which Programming Language Is Right For Me?</h1>
-  <p>Fill out this questionnaire to get a personalized suggestion of which language is right for you.</p>
-  <h2>First of all... Should I learn Javascript?</h2>
-  <p>Have you already picked up a little bit of Javascript?</p>
-  <form id="js-select-form">
-    <select id="js-yes/no">
-      <option>Yes</option>
-      <option>No</option>
-    </select>
-    <button type="submit">Submit Selection</button>
-  </form>
-  <p id="js-response"></p>
-
-  <h2>How about C#, Python, or Ruby?</h1>
-
-  <div id="surveyIntro" class="hidden">
-    <p>These are two of the most popular languages for back end development. In addition to Javascript and React for frontend, you'll want to consider between C# and Ruby to develop your skills in the realm of back end development.</p>
-    <button type="button" id="takeTheSurvey">Click Here To Take The Survey</button>
+  <div class="top">
+    <h1>Which Programming Language Is Right For Me?</h1>
+    <p>Fill out this questionnaire to get a personalized suggestion of which language is right for you.</p>
+  </div>
+  <div class="javaScript">
+    <h2>First of all... Should I learn Javascript?</h2>
+    <p>Have you already picked up a little bit of Javascript?</p>
+    <form id="js-select-form">
+      <select id="js-yes/no">
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+      <button type="submit">Submit Selection</button>
+    </form>
+    <p id="js-response"></p>
   </div>
 
-  <div id="surveyBody" class="hidden">
-    <h3>Choose a number between 1 and 7</h3>
-    <p>With <strong>1</strong> meaning that you strongly disagree, <strong>7</strong> meaning that you strongly DO agree, and <strong>4</strong> being a state of general ambivalence.</p>
-    
-    <div class="qna">
-      <p>1st Question</p>
-        <br>
-      <div class="qBox">
-        <div class="disagree">
-          <h4>Strongly Disagree</h4>
-        </div>
-        <div class="oneToSevenForm">
-          <form id="q1">
-            <label>
-              <input type="radio" name="q1" value="1">
-                1
-            </label>
-            <label> 
-              <input type="radio" name="q1" value="2">
-                2
-            </label>
-            <label>
-              <input type ="radio" name="q1" value="3">
-                3
-            </label>
-            <label>
-              <input type="radio" name="q1" value="4" checked>
-                4
-            </label>
-            <label>
-              <input type="radio" name="q1" value="5">
-                5
-            </label>
-            <label>
-              <input type="radio" name="q1" value="6">
-                6
-            </label>
-            <label>
-                <input type="radio" name="q1" value="7">
-                7
-            </label>
-          </form><br>
-        </div>
-        <div class="agree">
-          <h4>Strongly Agree</h4>
-        </div>
-      </div>
+  <div class="bottomHalf">
+    <h2>How about C#, Python, or Ruby?</h1>
+
+    <div id="surveyIntro" class="hidden">
+      <p>These are two of the most popular languages for back end development. In addition to Javascript and React for frontend, you'll want to consider between C# and Ruby to develop your skills in the realm of back end development.</p>
+      <button type="button" id="takeTheSurvey">Click Here To Take The Survey</button>
     </div>
 
-    <div class="qna">
-      <p>2nd Question</p>
-        <br>
-      <div class="qBox">
-        <div class="disagree">
-          <h4>Strongly Disagree</h4>
-        </div>
-        <div class="oneToSevenForm">
-          <form id="q2">
-            <label>
-              <input type="radio" name="q2" value="1">
-                1
-            </label>
-            <label> 
-              <input type="radio" name="q2" value="2">
-                2
-            </label>
-            <label>
-              <input type ="radio" name="q2" value="3">
-                3
-            </label>
-            <label>
-              <input type="radio" name="q2" value="4" checked>
-                4
-            </label>
-            <label>
-              <input type="radio" name="q2" value="5">
-                5
-            </label>
-            <label>
-              <input type="radio" name="q2" value="6">
-                6
-            </label>
-            <label>
-                <input type="radio" name="q2" value="7">
-                7
-            </label>
-          </form><br>
-        </div>
-        <div class="agree">
-          <h4>Strongly Agree</h4>
+    <div id="surveyBody" class="hidden">
+      <h3>Choose a number between 1 and 7</h3>
+      <p>With <strong>1</strong> meaning that you strongly disagree, <strong>7</strong> meaning that you strongly DO agree, and <strong>4</strong> being a state of general ambivalence.</p>
+      
+      <div class="qna">
+        <p>I want to make dynamic apps that interact with user input</p>
+          <br>
+        <div class="qBox">
+          <div class="disagree">
+            <h4>Strongly Disagree</h4>
+          </div>
+          <div class="oneToSevenForm">
+            <form id="q1">
+              <label>
+                <input type="radio" name="q1" value="1">
+                  1
+              </label>
+              <label> 
+                <input type="radio" name="q1" value="2">
+                  2
+              </label>
+              <label>
+                <input type ="radio" name="q1" value="3">
+                  3
+              </label>
+              <label>
+                <input type="radio" name="q1" value="4" checked>
+                  4
+              </label>
+              <label>
+                <input type="radio" name="q1" value="5">
+                  5
+              </label>
+              <label>
+                <input type="radio" name="q1" value="6">
+                  6
+              </label>
+              <label>
+                  <input type="radio" name="q1" value="7">
+                  7
+              </label>
+            </form><br>
+          </div>
+          <div class="agree">
+            <h4>Strongly Agree</h4>
+          </div>
         </div>
       </div>
+
+      <div class="qna">
+        <p>I am interested in working with large data sets</p>
+          <br>
+        <div class="qBox">
+          <div class="disagree">
+            <h4>Strongly Disagree</h4>
+          </div>
+          <div class="oneToSevenForm">
+            <form id="q2">
+              <label>
+                <input type="radio" name="q2" value="1">
+                  1
+              </label>
+              <label> 
+                <input type="radio" name="q2" value="2">
+                  2
+              </label>
+              <label>
+                <input type ="radio" name="q2" value="3">
+                  3
+              </label>
+              <label>
+                <input type="radio" name="q2" value="4" checked>
+                  4
+              </label>
+              <label>
+                <input type="radio" name="q2" value="5">
+                  5
+              </label>
+              <label>
+                <input type="radio" name="q2" value="6">
+                  6
+              </label>
+              <label>
+                  <input type="radio" name="q2" value="7">
+                  7
+              </label>
+            </form><br>
+          </div>
+          <div class="agree">
+            <h4>Strongly Agree</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="qna">
+        <p>I am interested in creating elaborate visual displays</p>
+          <br>
+        <div class="qBox">
+          <div class="disagree">
+            <h4>Strongly Disagree</h4>
+          </div>
+          <div class="oneToSevenForm">
+            <form id="q3">
+              <label>
+                <input type="radio" name="q3" value="1">
+                  1
+              </label>
+              <label> 
+                <input type="radio" name="q3" value="2">
+                  2
+              </label>
+              <label>
+                <input type ="radio" name="q3" value="3">
+                  3
+              </label>
+              <label>
+                <input type="radio" name="q3" value="4" checked>
+                  4
+              </label>
+              <label>
+                <input type="radio" name="q3" value="5">
+                  5
+              </label>
+              <label>
+                <input type="radio" name="q3" value="6">
+                  6
+              </label>
+              <label>
+                  <input type="radio" name="q3" value="7">
+                  7
+              </label>
+            </form><br>
+          </div>
+          <div class="agree">
+            <h4>Strongly Agree</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="qna">
+        <p>I want to work for a large and established company </p>
+          <br>
+        <div class="qBox">
+          <div class="disagree">
+            <h4>Strongly Disagree</h4>
+          </div>
+          <div class="oneToSevenForm">
+            <form id="q4">
+              <label>
+                <input type="radio" name="q4" value="1">
+                  1
+              </label>
+              <label> 
+                <input type="radio" name="q4" value="2">
+                  2
+              </label>
+              <label>
+                <input type ="radio" name="q4" value="3">
+                  3
+              </label>
+              <label>
+                <input type="radio" name="q4" value="4" checked>
+                  4
+              </label>
+              <label>
+                <input type="radio" name="q4" value="5">
+                  5
+              </label>
+              <label>
+                <input type="radio" name="q4" value="6">
+                  6
+              </label>
+              <label>
+                  <input type="radio" name="q4" value="7">
+                  7
+              </label>
+            </form><br>
+          </div>
+          <div class="agree">
+            <h4>Strongly Agree</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="qna">
+        <p>I don't really like statistics</p>
+          <br>
+        <div class="qBox">
+          <div class="disagree">
+            <h4>Strongly Disagree</h4>
+          </div>
+          <div class="oneToSevenForm">
+            <form id="q5">
+              <label>
+                <input type="radio" name="q5" value="1">
+                  1
+              </label>
+              <label> 
+                <input type="radio" name="q5" value="2">
+                  2
+              </label>
+              <label>
+                <input type ="radio" name="q5" value="3">
+                  3
+              </label>
+              <label>
+                <input type="radio" name="q5" value="4" checked>
+                  4
+              </label>
+              <label>
+                <input type="radio" name="q5" value="5">
+                  5
+              </label>
+              <label>
+                <input type="radio" name="q5" value="6">
+                  6
+              </label>
+              <label>
+                  <input type="radio" name="q5" value="7">
+                  7
+              </label>
+            </form><br>
+          </div>
+          <div class="agree">
+            <h4>Strongly Agree</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="qna">
+        <p>I don't mind coding in a language that is rigid or formal, so long as it's logical</p>
+          <br>
+        <div class="qBox">
+          <div class="disagree">
+            <h4>Strongly Disagree</h4>
+          </div>
+          <div class="oneToSevenForm">
+            <form id="q6">
+              <label>
+                <input type="radio" name="q6" value="1">
+                  1
+              </label>
+              <label> 
+                <input type="radio" name="q6" value="2">
+                  2
+              </label>
+              <label>
+                <input type ="radio" name="q6" value="3">
+                  3
+              </label>
+              <label>
+                <input type="radio" name="q6" value="4" checked>
+                  4
+              </label>
+              <label>
+                <input type="radio" name="q6" value="5">
+                  5
+              </label>
+              <label>
+                <input type="radio" name="q6" value="6">
+                  6
+              </label>
+              <label>
+                  <input type="radio" name="q6" value="7">
+                  7
+              </label>
+            </form><br>
+          </div>
+          <div class="agree">
+            <h4>Strongly Agree</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="qna">
+        <p>I think of coding like writing a story</p>
+          <br>
+        <div class="qBox">
+          <div class="disagree">
+            <h4>Strongly Disagree</h4>
+          </div>
+          <div class="oneToSevenForm">
+            <form id="q7">
+              <label>
+                <input type="radio" name="q7" value="1">
+                  1
+              </label>
+              <label> 
+                <input type="radio" name="q7" value="2">
+                  2
+              </label>
+              <label>
+                <input type ="radio" name="q7" value="3">
+                  3
+              </label>
+              <label>
+                <input type="radio" name="q7" value="4" checked>
+                  4
+              </label>
+              <label>
+                <input type="radio" name="q7" value="5">
+                  5
+              </label>
+              <label>
+                <input type="radio" name="q7" value="6">
+                  6
+              </label>
+              <label>
+                  <input type="radio" name="q7" value="7">
+                  7
+              </label>
+            </form><br>
+          </div>
+          <div class="agree">
+            <h4>Strongly Agree</h4>
+          </div>
+        </div>
+      </div>
+      <br>
+      <button type="button" id="show-me">Show My Results</button>
     </div>
 
-    <div class="qna">
-      <p>3rd Question</p>
-        <br>
-      <div class="qBox">
-        <div class="disagree">
-          <h4>Strongly Disagree</h4>
-        </div>
-        <div class="oneToSevenForm">
-          <form id="q3">
-            <label>
-              <input type="radio" name="q3" value="1">
-                1
-            </label>
-            <label> 
-              <input type="radio" name="q3" value="2">
-                2
-            </label>
-            <label>
-              <input type ="radio" name="q3" value="3">
-                3
-            </label>
-            <label>
-              <input type="radio" name="q3" value="4" checked>
-                4
-            </label>
-            <label>
-              <input type="radio" name="q3" value="5">
-                5
-            </label>
-            <label>
-              <input type="radio" name="q3" value="6">
-                6
-            </label>
-            <label>
-                <input type="radio" name="q3" value="7">
-                7
-            </label>
-          </form><br>
-        </div>
-        <div class="agree">
-          <h4>Strongly Agree</h4>
-        </div>
-      </div>
+    <div id="surveyResults" class="hidden">
+      <p id="showResults" class="yourLanguage"></p><br>
+      <button type="button" id="reset">Take Survey Again</button>
     </div>
-
-    <div class="qna">
-      <p>4th Question</p>
-        <br>
-      <div class="qBox">
-        <div class="disagree">
-          <h4>Strongly Disagree</h4>
-        </div>
-        <div class="oneToSevenForm">
-          <form id="q4">
-            <label>
-              <input type="radio" name="q4" value="1">
-                1
-            </label>
-            <label> 
-              <input type="radio" name="q4" value="2">
-                2
-            </label>
-            <label>
-              <input type ="radio" name="q4" value="3">
-                3
-            </label>
-            <label>
-              <input type="radio" name="q4" value="4" checked>
-                4
-            </label>
-            <label>
-              <input type="radio" name="q4" value="5">
-                5
-            </label>
-            <label>
-              <input type="radio" name="q4" value="6">
-                6
-            </label>
-            <label>
-                <input type="radio" name="q4" value="7">
-                7
-            </label>
-          </form><br>
-        </div>
-        <div class="agree">
-          <h4>Strongly Agree</h4>
-        </div>
-      </div>
-    </div>
-
-    <div class="qna">
-      <p>5th Question</p>
-        <br>
-      <div class="qBox">
-        <div class="disagree">
-          <h4>Strongly Disagree</h4>
-        </div>
-        <div class="oneToSevenForm">
-          <form id="q5">
-            <label>
-              <input type="radio" name="q5" value="1">
-                1
-            </label>
-            <label> 
-              <input type="radio" name="q5" value="2">
-                2
-            </label>
-            <label>
-              <input type ="radio" name="q5" value="3">
-                3
-            </label>
-            <label>
-              <input type="radio" name="q5" value="4" checked>
-                4
-            </label>
-            <label>
-              <input type="radio" name="q5" value="5">
-                5
-            </label>
-            <label>
-              <input type="radio" name="q5" value="6">
-                6
-            </label>
-            <label>
-                <input type="radio" name="q5" value="7">
-                7
-            </label>
-          </form><br>
-        </div>
-        <div class="agree">
-          <h4>Strongly Agree</h4>
-        </div>
-      </div>
-    </div>
-
-    <div class="qna">
-      <p>6th Question</p>
-        <br>
-      <div class="qBox">
-        <div class="disagree">
-          <h4>Strongly Disagree</h4>
-        </div>
-        <div class="oneToSevenForm">
-          <form id="q6">
-            <label>
-              <input type="radio" name="q6" value="1">
-                1
-            </label>
-            <label> 
-              <input type="radio" name="q6" value="2">
-                2
-            </label>
-            <label>
-              <input type ="radio" name="q6" value="3">
-                3
-            </label>
-            <label>
-              <input type="radio" name="q6" value="4" checked>
-                4
-            </label>
-            <label>
-              <input type="radio" name="q6" value="5">
-                5
-            </label>
-            <label>
-              <input type="radio" name="q6" value="6">
-                6
-            </label>
-            <label>
-                <input type="radio" name="q6" value="7">
-                7
-            </label>
-          </form><br>
-        </div>
-        <div class="agree">
-          <h4>Strongly Agree</h4>
-        </div>
-      </div>
-    </div>
-
-    <div class="qna">
-      <p>7th Question</p>
-        <br>
-      <div class="qBox">
-        <div class="disagree">
-          <h4>Strongly Disagree</h4>
-        </div>
-        <div class="oneToSevenForm">
-          <form id="q7">
-            <label>
-              <input type="radio" name="q7" value="1">
-                1
-            </label>
-            <label> 
-              <input type="radio" name="q7" value="2">
-                2
-            </label>
-            <label>
-              <input type ="radio" name="q7" value="3">
-                3
-            </label>
-            <label>
-              <input type="radio" name="q7" value="4" checked>
-                4
-            </label>
-            <label>
-              <input type="radio" name="q7" value="5">
-                5
-            </label>
-            <label>
-              <input type="radio" name="q7" value="6">
-                6
-            </label>
-            <label>
-                <input type="radio" name="q7" value="7">
-                7
-            </label>
-          </form><br>
-        </div>
-        <div class="agree">
-          <h4>Strongly Agree</h4>
-        </div>
-      </div>
-    </div>
-    <br>
-    <button type="button" id="show-me">Show My Results</button>
   </div>
-
-  <div id="surveyResults" class="hidden">
-    <p id="showResults"></p><br>
-    <button type="button" id="reset">Take Survey Again</button>
-  </div>
-
 </body>
 </html>

@@ -110,19 +110,19 @@ function bottomSuggestion() {
 
   let surveyReply;
   if (tally1 > tally2 && tally1 > tally3) {
-    surveyReply = "Ruby"
+    surveyReply = "Ruby! Based on your answers, Ruby would be a good language for you to look into. Ruby is a flexible and relatively easy to implement language that works well with interactive app development. It is especially popular with startups. "
   }
 
   else if (tally2 >= tally1 && tally2 >= tally3) {
-    surveyReply = "C#"
+    surveyReply = "Based on your answers, C# would be a good language for you to look into. It was developed by Microsoft and is widely implemented in a range of large and conventional businesses."
   }
 
   else if (tally3 >= tally1 && tally3 >= tally2) {
-    surveyReply = "Python"
+    surveyReply = "Python! Based on your answers, Python would be a good language for you to look into. It is very popular for statistical analysis and data analytics."
   }
 
   else {
-    surveyReply = "Ruby"
+    surveyReply = "Ruby! Based on your answers, Ruby would be a good language for you to look into. Ruby is a flexible and relatively easy to implement language that works well with interactive app development. It is especially popular with startups."
   }
   
   document.getElementById("showResults").innerText = surveyReply;
